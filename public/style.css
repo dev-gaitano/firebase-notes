@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: whitesmoke;
+}
+* ul {
+  list-style-type: none;
+}
+.h-full {
+  height: 72%;
+}
+#root-container {
+  background: black;
+  height: 79vh;
+  padding: 30px;
+}
+#trunk-container {
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 20px 0px;
+  border-radius: 999px;
+  height: 54px;
+}
+#title-container {
+  border: 1px solid grey;
+  height: 100%;
+  width: 78%;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+}
+#title-container h1 {
+  margin-left: 16px;
+}
+#user-info-container {
+  border: 1px solid grey;
+  height: 100%;
+  width: 54px;
+  border-radius: 999px;
+}
+#main {
+  border: 1px solid grey;
+  margin: 20px 0px 20px 0px;
+  padding: 16px;
+  height: 100%;
+}
+#notes-list {
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 999px;
+  height: 40px;
+}
+#new-note-button {
+  display: flex;
+  gap: 4px;
+  border: none;
+  background: none;
+  border: 1px solid grey;
+  border-radius: 999px;
+  padding: 16px;
+  height: 100%;
+  width: 40px;
+}
+#new-note-input {
+  height: 100%;
+  width: 75%;
+  border-radius: 999px;
+  padding: 0px 12px 0px 12px;
+  background: black;
+  border: 1px solid grey;
+}

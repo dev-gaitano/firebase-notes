@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="./style.css" rel="stylesheet">
+  <script type="module" src="../src/js/firebase-config.js"></script>
+  <script src="../src/js/app.js" defer></script>
+</head>
+
+<body>
+  <div id="root-container">
+    <div id="trunk-container">
+      <div class="h-full">
+        <header id="header">
+          <div id="title-container">
+            <h1>Notes</h1>
+          </div>
+          <div id="user-info-container">
+            <img src="./profile-pic.png" alt="">
+          </div>
+        </header>
+        <main id="main">
+          <ul id="notes-list">
+            <li>
+              <div class="note"></div>
+            </li>
+            <li>
+              <div class="note"></div>
+            </li>
+            <li>
+              <div class="note"></div>
+            </li>
+            <li>
+              <div class="note"></div>
+            </li>
+            <li>
+              <div class="note"></div>
+            </li>
+          </ul>
+        </main>
+      </div>
+      <footer id="footer">
+        <button id="new-note-button">
+          <img src="./plus-icon.png" alt="">
+        </button>
+        <input id="new-note-input" type="text" name="new-note" value="" placeholder="Start typing...">
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- vim: set ft=html : -->
