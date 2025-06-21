@@ -3,9 +3,49 @@
   padding: 0px;
   color: whitesmoke;
 }
+:root {
+  --bg-dark: hsl(0 0% 0%);
+  --bg: hsl(0 0% 5%);
+  --bg-light: hsl(0 0% 10%);
+  --text: hsl(0 0% 95%);
+  --text-muted: hsl(0 0% 70%);
+}
+body.dark {
+  --bg-dark: hsl(246 30% 2%);
+  --bg: hsl(246 18% 5%);
+  --bg-light: hsl(246 11% 9%);
+  --text: hsl(245 98% 97%);
+  --text-muted: hsl(245 10% 71%);
+  --highlight: hsl(246 6% 41%);
+  --border: hsl(246 8% 30%);
+  --border-muted: hsl(246 11% 20%);
+  --primary: hsl(248 66% 79%);
+  --secondary: hsl(62 35% 57%);
+  --danger: hsl(9 26% 64%);
+  --warning: hsl(52 19% 57%);
+  --success: hsl(146 17% 59%);
+  --info: hsl(217 28% 65%);
+}
+body.light {
+  --bg-dark: hsl(245 16% 91%);
+  --bg: hsl(245 36% 96%);
+  --bg-light: hsl(245 100% 100%);
+  --text: hsl(248 33% 6%);
+  --text-muted: hsl(246 8% 30%);
+  --highlight: hsl(245 100% 100%);
+  --border: hsl(246 5% 52%);
+  --border-muted: hsl(245 8% 64%);
+  --primary: hsl(252 34% 36%);
+  --secondary: hsl(60 100% 11%);
+  --danger: hsl(9 21% 41%);
+  --warning: hsl(52 23% 34%);
+  --success: hsl(147 19% 36%);
+  --info: hsl(217 22% 41%);
+}
 * ul {
   list-style-type: none;
 }
+/*
 .glass-morph {
   background-color: transparent;
   backdrop-filter: blur(20px);
@@ -14,8 +54,9 @@
     rgba(0, 0, 0, 0.2),
     rgba(255, 255, 255, 0.2));
 }
+*/
 #root-container {
-  background: radial-gradient(circle at top left, purple 0% 20%, black 50% 100%);
+  background: var(--bg-dark);
   height: 96vh;
   padding: 16px 12px 16px 12px;
 }
@@ -42,27 +83,28 @@
   height: 54px;
 }
 #title-container {
-  border: 1px solid grey;
   height: 100%;
   border-radius: 999px;
   display: flex;
   flex-grow: 1;
   align-items: center;
+  background: var(--bg);
+  color: var(--text);
 }
 #title-container h1 {
   margin-left: 16px;
 }
 #user-info-container {
-  border: 1px solid grey;
   height: 100%;
   width: 54px;
   border-radius: 999px;
+  background: var(--bg-light);
 }
 #main {
-  border: 1px solid grey;
   padding: 16px;
   height: 100%;
   border-radius: 20px;
+  background: var(--bg);
 }
 #footer {
   display: flex;
@@ -73,17 +115,19 @@
   gap: 8px;
 }
 #new-note-button {
-  border: 1px solid grey;
+  border: none;
   border-radius: 999px;
   padding: 16px;
   height: 100%;
   width: 40px;
+  background: var(--bg-light);
 }
 #new-note-input {
   height: 100%;
+  border: none;
   border-radius: 999px;
+  background: var(--bg-light);
   padding: 0px 12px 0px 12px;
-  border: 1px solid grey;
   display: flex;
   flex-grow: 1;
 }

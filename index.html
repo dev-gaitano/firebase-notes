@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link href="./style.css" rel="stylesheet">
-  <script type="module" src="../src/js/firebase-config.js"></script>
-  <script src="../src/js/app.js" defer></script>
+  <title>Firebase Notes</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +14,7 @@
       <div id="branch-container">
         <header id="header">
           <div id="title-container" class="glass-morph">
-            <h1>Notes</h1>
+            <h1>ascend</h1>
           </div>
           <div id="user-info-container" class="glass-morph">
             <img src="./profile-pic.png" alt="">
@@ -27,18 +25,6 @@
             <li>
               <div class="note"></div>
             </li>
-            <li>
-              <div class="note"></div>
-            </li>
-            <li>
-              <div class="note"></div>
-            </li>
-            <li>
-              <div class="note"></div>
-            </li>
-            <li>
-              <div class="note"></div>
-            </li>
           </ul>
         </main>
       </div>
@@ -46,11 +32,18 @@
         <button id="new-note-button" class="glass-morph">
           <img src="./plus-icon.png" alt="">
         </button>
-        <input id="new-note-input" class="glass-morph" type="text" name="new-note" value="" placeholder="Start typing...">
+        <input 
+        id="new-note-input" 
+        class="glass-morph" 
+        type="text"
+        name="new-note"
+        placeholder="Start typing...">
       </footer>
     </div>
   </div>
+
+  <script type="module" src="./src/js/firebase-config.js" defer></script>
+  <script type="module" src="./src/js/app.js" defer></script>
 </body>
 
 </html>
-<!-- vim: set ft=html : -->
